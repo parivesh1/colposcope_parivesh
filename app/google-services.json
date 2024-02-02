@@ -1,0 +1,183 @@
+{
+  "project_info": {
+    "project_number": "293369251942",
+    "firebase_url": "https://colposcopy-patient-dashboard-default-rtdb.firebaseio.com",
+    "project_id": "colposcopy-patient-dashboard",
+    "storage_bucket": "colposcopy-patient-dashboard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293369251942:android:45bc21419dd7391cdd45a7",
+        "android_client_info": {
+          "package_name": "com.colposcope.ceeri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293369251942-j4ckq5g2emmv6jvod4k9319fpeo2je4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.colposcope.ceeri",
+            "certificate_hash": "5f81d6ec0e7129bf59e3a9557a615e69feb17ef9"
+          }
+        },
+        {
+          "client_id": "293369251942-r8f7m3em1q99gtaesc2luu4ek2h1j5j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5X9ysk7aFhBQUQEMOq3sy9YHaAoowfkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293369251942-r8f7m3em1q99gtaesc2luu4ek2h1j5j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293369251942:android:ed356504d209a2f1dd45a7",
+        "android_client_info": {
+          "package_name": "com.example.untitled5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293369251942-0m3juijn07kunpp9asds3ki0pev9glbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.untitled5",
+            "certificate_hash": "c5e8366fad3e75b945adca6992dcbc66b464f30b"
+          }
+        },
+        {
+          "client_id": "293369251942-ubbjnlihtmh944ruud6d4j69gd3gug7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.untitled5",
+            "certificate_hash": "5f81d6ec0e7129bf59e3a9557a615e69feb17ef9"
+          }
+        },
+        {
+          "client_id": "293369251942-r8f7m3em1q99gtaesc2luu4ek2h1j5j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5X9ysk7aFhBQUQEMOq3sy9YHaAoowfkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293369251942-r8f7m3em1q99gtaesc2luu4ek2h1j5j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293369251942:android:fca373512e304afbdd45a7",
+        "android_client_info": {
+          "package_name": "com.jiangdg.ausbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293369251942-r8f7m3em1q99gtaesc2luu4ek2h1j5j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5X9ysk7aFhBQUQEMOq3sy9YHaAoowfkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293369251942-r8f7m3em1q99gtaesc2luu4ek2h1j5j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293369251942:android:25485aa4e92ac23fdd45a7",
+        "android_client_info": {
+          "package_name": "com.jiangdg.usbcamera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293369251942-47g5jqdgvk8oljefe7rb8t3gohns7auu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jiangdg.usbcamera",
+            "certificate_hash": "5f81d6ec0e7129bf59e3a9557a615e69feb17ef9"
+          }
+        },
+        {
+          "client_id": "293369251942-akm4nt226j8pcu3o7mip45bjcq7qi9qu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jiangdg.usbcamera",
+            "certificate_hash": "0d78d98636bcbbd79a4dda9042af691183140eae"
+          }
+        },
+        {
+          "client_id": "293369251942-jgar79qmmspj0d9i15rpdvkamkvsa6bo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jiangdg.usbcamera",
+            "certificate_hash": "2c56ba8a11a13e2d235292fb010b2a4cd4af6283"
+          }
+        },
+        {
+          "client_id": "293369251942-puk7al80pc4ktcb4r5j23t2j7osgbecv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jiangdg.usbcamera",
+            "certificate_hash": "c5e8366fad3e75b945adca6992dcbc66b464f30b"
+          }
+        },
+        {
+          "client_id": "293369251942-r8f7m3em1q99gtaesc2luu4ek2h1j5j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5X9ysk7aFhBQUQEMOq3sy9YHaAoowfkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293369251942-r8f7m3em1q99gtaesc2luu4ek2h1j5j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

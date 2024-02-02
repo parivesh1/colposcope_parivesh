@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newQua"
+    tools:context=".SplashActivity">
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="?attr/actionBarSize"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:background="@color/newSec"/>-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/logo"
+        android:layout_marginTop="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/passMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Android Endoscope Portal"
+        android:textSize="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/logo"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/scrollingImageView"
+        android:enabled="false"
+        android:textSize="18dp"
+        android:gravity="center_horizontal"
+        android:text="Powered By:"
+        android:textColor="#1565C0" />
+
+    <ImageView
+        android:id="@+id/scrollingImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/homepage" />
+
+
+</RelativeLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:background="#D0FFEB"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".newPatientEntry">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/emailOfPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email-id: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/patientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#3FBEAB"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Enter comorbidities"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/nameOfPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailOfPatient"
+                android:text="Name: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/patientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#3FBEAB"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -/(),"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Enter comorbidities"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailOfPatient"
+                android:text="Gender: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/patientGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="#3FBEAB"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:prompt="@string/spinner_title"
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/patientPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailOfPatient"
+                android:text="Password: "
+                android:textColor="#3FBEAB"
+
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/patientPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#3FBEAB"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -/(),"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="textPassword"
+                android:hint="Enter comorbidities"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/dobOfPatient_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/patientDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:backgroundTint="#3FBEAB"
+                android:hint="dd/mm/yyyy"
+                android:singleLine="true"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/mobile_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mob: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/patientMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:backgroundTint="#3FBEAB"
+                android:digits="0123456789"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Enter your mobile no."
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/address_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/patientAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:backgroundTint="#3FBEAB"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -/(),"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Residence Address"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/nameOfDoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Name: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/docName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52dp"
+                android:layout_toRightOf="@id/emailOfPatient"
+                android:textColor="#3FBEAB"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/bloodGroupOfPatient_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Group: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/patientBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="#3FBEAB"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:prompt="@string/spinner_title"
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/patientImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:text="Patient Photo"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/patientImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@id/progress_bar"
+            android:layout_below="@id/button_choose_image"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:progressTint="#3FBEAB" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/RegisterPatientButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Register New Patient "
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

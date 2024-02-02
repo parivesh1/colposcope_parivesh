@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:background="#D0FFEB"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/emailOfDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email-id: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/email_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52dp"
+                android:layout_toRightOf="@id/emailOfDoctor"
+                android:textColor="#3FBEAB"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/nameOfDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailOfDoctor"
+                android:text="Name: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/nameOfDoctor_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52dp"
+                android:layout_toRightOf="@id/nameOfDoctor"
+                android:textColor="#3FBEAB"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/dobOfDoctor_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dobOfDoctor_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:backgroundTint="#3FBEAB"
+                android:hint="dd/mm/yyyy"
+                android:singleLine="true"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/mobile_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mob: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/mobile_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:backgroundTint="#3FBEAB"
+                android:digits="0123456789"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Enter your mobile no."
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/address_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/address_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:backgroundTint="#3FBEAB"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -/(),"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Hospital/Clinic Address"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/degree_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qualification: "
+                android:textColor="#3FBEAB"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/degree_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:backgroundTint="#3FBEAB"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .()"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Area of Specialisation"
+                android:singleLine="true"
+                android:textColor="#3FBEAB"
+                android:textColorHint="#A6F8F1"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_choose_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:text="Choose Photo"
+            android:textColor="#FFFFFF" />
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@id/progress_bar"
+            android:layout_below="@id/button_choose_image"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:progressTint="#3FBEAB" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="upload"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

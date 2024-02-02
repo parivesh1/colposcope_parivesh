@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newQua"
+    tools:context=".ColposcopeReportPdf"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:background="@color/newSec" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="603dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/WHITE"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="COLPOSCOPY"
+                    android:textAlignment="center"
+                    android:textColor="@color/newPri"
+                    android:textSize="24dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/BLUE_A080" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name : "
+                            android:textColor="@color/BLUE_A080" />
+
+                        <TextView
+                            android:id="@+id/patientName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Patient Name"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DOB : "
+                            android:textColor="@color/BLUE_A080" />
+
+                        <TextView
+                            android:id="@+id/patientDob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dd/mm/yyyy"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile : "
+                            android:textColor="@color/BLUE_A080" />
+
+                        <TextView
+                            android:id="@+id/patientMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Patient Mobile"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Group : "
+                            android:textColor="@color/BLUE_A080" />
+
+                        <TextView
+                            android:id="@+id/patientBloodGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A+ "
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/checkRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Check Record :"
+                        android:textColor="@color/BLUE_A080"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/chiefComplaint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/chiefComplaintList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/colposcopyFinding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Colposcopy Finding : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/colposcopyFindingList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cytologyReport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cytology Report : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/cytologyReportList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/finalImpression"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Final Impression : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/finalImpressionList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pathologicalReport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pathological Report : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/pathologicalReportList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/remark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remark : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/swedeScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Swede Score :"
+                        android:textColor="@color/BLUE_A080"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/acetoUptake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aceto Uptake : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/acetoUptakeList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/margins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Margins : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/marginsList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vessels"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vessels : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/vesselsList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lessionSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lession Size : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/lessionSizeList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/iodineStaining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Iodine Staining : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/iodineStainingList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/swede"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Score : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/swedeValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/swedeResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Result : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/swedeValueResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reidScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Reid Score :"
+                        android:textColor="@color/BLUE_A080"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/marginsReid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Margins : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/marginsReidList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vesselsReid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vessels : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/vesselsReidList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Color : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/colorList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/iodineStainingReid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Iodine Staining : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/iodineStainingReidList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/reid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Score : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/reidValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/reidResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Result : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/reidValueResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/precaution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Precaution :"
+                        android:textColor="@color/BLUE_A080"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/precautionList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="precautons"
+                        android:textColor="@color/BLACK" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/treatment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Treatment :"
+                        android:textColor="@color/BLUE_A080"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/treatmentList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="treatment"
+                        android:textColor="@color/BLACK" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/biopsyView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Biopsy Place :"
+                        android:textColor="@color/BLUE_A080"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/biopsyImageV"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/patientImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Patient Image :"
+                        android:textColor="@color/BLUE_A080"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            >
+
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            >
+
+                        </ImageView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="200dp"
+                            android:layout_weight="1"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="5dp"
+                            >
+
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            >
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <Button
+                    android:id="@+id/savePdfButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="64"
+                    android:background="@drawable/rounded_button"
+                    android:text="Save Pdf"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp"
+                    android:visibility="visible" />
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:text="Edit Pdf"
+                    android:layout_weight="1"
+                    android:layout_marginRight="64dp"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

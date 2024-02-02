@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0FFEB"
+    tools:context=".SexualAssaultReportPdf"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="603dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/WHITE"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="SEXUAL ASSAULT"
+                    android:textAlignment="center"
+                    android:textColor="@color/BLUE_A080"
+                    android:textSize="22dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/BLUE_A080" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name : "
+                            android:textColor="@color/BLUE_A080" />
+
+                        <TextView
+                            android:id="@+id/patientName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Patient Name"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DOB : "
+                            android:textColor="@color/BLUE_A080" />
+
+                        <TextView
+                            android:id="@+id/patientDob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dd/mm/yyyy"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile : "
+                            android:textColor="@color/BLUE_A080" />
+
+                        <TextView
+                            android:id="@+id/patientMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Patient Mobile"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Group : "
+                            android:textColor="@color/BLUE_A080" />
+
+                        <TextView
+                            android:id="@+id/patientBloodGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A+ "
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sexualAssault"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Sexual Assault :"
+                        android:textColor="@color/BLUE_A080"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/analInjuriesorinjurytoanalfolds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Anal Injuries or injury to anal folds : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/analInjuriesorinjurytoanalfoldsText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Erythema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Erythema : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/ErythemaText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/greenFilter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Green Filter : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/greenFilterText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/posteriorFourchette"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Posterior Fourchette : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/posteriorFourchetteText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/presenceOfForeignBodies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Presence of Foreign bodies : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/presenceOfForeignBodiesText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/SkinOrMucosalTrauma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Skin or Mucosal Trauma : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/SkinOrMucosalTraumaText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/stainingEffect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Staining Effect : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/stainingEffectText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/swabSample"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Swab Sample : "
+                            android:textColor="@color/GREEN" />
+
+                        <TextView
+                            android:id="@+id/swabSampleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chief Complaint"
+                            android:textColor="@color/BLACK" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/patientImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Patient Image :"
+                        android:textColor="@color/BLUE_A080"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            >
+
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            >
+
+                        </ImageView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="200dp"
+                            android:layout_weight="1"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="5dp"
+                            >
+
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            >
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <Button
+                android:id="@+id/savePdfButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="Save Pdf"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="Edit Pdf"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:visibility="visible"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
