@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D0FFEB"
+    android:background="@color/newQua"
     tools:context=".SexualAssaultReportPdf"
 
     >
@@ -393,7 +393,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_marginVertical="16dp"
+            android:layout_marginHorizontal="32dp">
             <Button
                 android:id="@+id/savePdfButton"
                 android:layout_width="wrap_content"

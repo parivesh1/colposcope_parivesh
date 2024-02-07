@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="false"
-    android:background="#D0FFEB"
+    android:background="@color/newQua"
    >
 
     <LinearLayout
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email-id: "
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newSec"
                 android:textSize="20sp" />
 
             <TextView
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="52dp"
                 android:layout_toRightOf="@id/emailOfDoctor"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/emailOfDoctor"
                 android:text="Name: "
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newSec"
                 android:textSize="20sp" />
 
             <TextView
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="52dp"
                 android:layout_toRightOf="@id/nameOfDoctor"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -79,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="DOB: "
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newSec"
                 android:textSize="20sp" />
 
             <TextView
@@ -90,8 +90,8 @@
                 android:backgroundTint="#3FBEAB"
                 android:hint="dd/mm/yyyy"
                 android:singleLine="true"
-                android:textColor="#3FBEAB"
-                android:textColorHint="#A6F8F1"
+                android:textColor="@color/newPri"
+                android:textColorHint="@color/newPri"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mob: "
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newSec"
                 android:textSize="20sp" />
 
             <EditText
@@ -114,15 +114,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="90dp"
-                android:backgroundTint="#3FBEAB"
                 android:digits="0123456789"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Enter your mobile no."
                 android:maxLength="10"
                 android:singleLine="true"
-                android:textColor="#3FBEAB"
-                android:textColorHint="#A6F8F1"
+                android:textColor="@color/newPri"
+                android:textColorHint="@color/newPri"
                 android:textCursorDrawable="@drawable/color_cursor" />
         </LinearLayout>
 
@@ -137,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add: "
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newSec"
                 android:textSize="20sp" />
 
             <EditText
@@ -145,13 +144,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="90dp"
-                android:backgroundTint="#3FBEAB"
                 android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -/(),"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Hospital/Clinic Address"
-                android:textColor="#3FBEAB"
-                android:textColorHint="#A6F8F1"
+                android:textColor="@color/newPri"
+                android:textColorHint="@color/newPri"
                 android:textCursorDrawable="@drawable/color_cursor" />
         </LinearLayout>
 
@@ -166,22 +164,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Qualification: "
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newSec"
                 android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/degree_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:backgroundTint="#3FBEAB"
+                android:layout_marginLeft="16dp"
                 android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .()"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Area of Specialisation"
                 android:singleLine="true"
-                android:textColor="#3FBEAB"
-                android:textColorHint="#A6F8F1"
+                android:textColor="@color/newPri"
+                android:textColorHint="@color/newPri"
                 android:textCursorDrawable="@drawable/color_cursor" />
         </LinearLayout>
 
@@ -193,6 +190,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/rounded_button"
             android:text="Choose Photo"
+            android:textAllCaps="false"
             android:textColor="#FFFFFF" />
         <ImageView
             android:id="@+id/image_view"
@@ -208,7 +206,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:progressTint="#3FBEAB" />
+            android:progressTint="@color/newPri" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -218,11 +216,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
+                android:textAllCaps="false"
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/rounded_button"
-                android:text="upload"
+                android:text="Upload"
                 android:textColor="#FFFFFF" />
         </RelativeLayout>
 

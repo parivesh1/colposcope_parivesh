@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#D0FFEB"
+    android:background="@color/newQua"
 
     >
 
@@ -36,8 +36,8 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Date : "
-                       android:textColor="#FF7DA9"
+                       android:text="Date: "
+                       android:textColor="@color/newSec"
                        android:textSize="18sp" />
 
                    <Space
@@ -49,7 +49,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:text="xx/xx/xxxx"
-                       android:textColor="#3FBEAB"
+                       android:textColor="@color/newTer"
                        android:textSize="18sp" />
                </LinearLayout>
                <LinearLayout
@@ -61,8 +61,8 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Id : "
-                       android:textColor="#FF7DA9"
+                       android:text="Id: "
+                       android:textColor="@color/newSec"
                        android:textSize="18sp" />
 
                    <Space
@@ -74,7 +74,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:text="xx/xx/xxxx"
-                       android:textColor="#3FBEAB"
+                       android:textColor="@color/newTer"
                        android:textSize="18sp" />
                </LinearLayout>
            </LinearLayout>

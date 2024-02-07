@@ -27,7 +27,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
             android:text="Patient's History"
-            android:textColor="#FF7DA9"
+            android:textColor="@color/newPri"
             android:textSize="25dp"
             android:textStyle="bold" />
 

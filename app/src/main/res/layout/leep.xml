@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D0FFEB"
+    android:background="@color/newQua"
     tools:context=".LeepReport"
     >
 
@@ -30,12 +30,13 @@
             android:layout_marginTop="10dp"
             android:text="LEEP/LEITZ REPORT"
             android:layout_gravity="center"
+            android:textColor="@color/newPri"
             android:textSize="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="561dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
             <ListView
@@ -89,8 +90,8 @@
         android:id="@+id/llayout_snapbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true">
@@ -100,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="8dp"
             android:text="Save"
             android:background="@drawable/rounded_button"
             android:textAllCaps="false"
@@ -112,7 +113,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_weight="1"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="8dp"
             android:background="@drawable/rounded_button"
             android:text="Clear"
             android:textAllCaps="false"

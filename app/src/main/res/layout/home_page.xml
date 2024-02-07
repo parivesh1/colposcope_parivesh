@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D0FFEB"
+    android:background="@color/newQua"
     >
 
     <androidx.appcompat.widget.Toolbar
@@ -27,7 +27,7 @@
             android:layout_marginTop="60dp"
             android:layout_gravity="center"
             android:text="Welcome Back Doctor"
-            android:textColor="#FF7DA9"
+            android:textColor="@color/newPri"
             android:textSize="25sp"
             android:textStyle="bold"/>
 
@@ -37,7 +37,9 @@
             android:layout_height="wrap_content"
             android:text="Doctor's name"
             android:layout_gravity="center"
-            android:textColor="#3FBEAB"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/newSec"
+            android:textStyle="bold"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -50,6 +52,7 @@
         android:layout_marginLeft="80dp"
         android:background="@drawable/rounded_button"
         android:text="Old Patient"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="20dp"/>
 
@@ -62,6 +65,7 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="30dp"
         android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
         android:text="New Patient"
         android:textColor="#FFFFFF" />
     <Button
@@ -71,6 +75,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
+        android:textAllCaps="false"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/rounded_button"

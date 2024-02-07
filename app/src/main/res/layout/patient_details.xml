@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D0FFEB"
+    android:background="@color/newQua"
     android:fillViewport="false"
    >
 
@@ -23,6 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="16dp"
             android:layout_marginLeft="10dp">
 
             <TextView
@@ -30,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name: "
-                android:textColor="#FF7DA9"
+                android:textColor="@color/newSec"
                 android:textSize="18sp" />
 
             <Space
@@ -42,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="no name"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
@@ -56,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email: "
-                android:textColor="#FF7DA9"
+                android:textColor="@color/newSec"
                 android:textSize="18sp" />
 
             <Space
@@ -68,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
@@ -82,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="D.O.B.: "
-                android:textColor="#FF7DA9"
+                android:textColor="@color/newSec"
                 android:textSize="18sp" />
 
             <Space
@@ -94,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="no dob"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
@@ -108,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gender: "
-                android:textColor="#FF7DA9"
+                android:textColor="@color/newSec"
                 android:textSize="18sp" />
 
             <Space
@@ -120,7 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Female"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
@@ -134,7 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Age: "
-                android:textColor="#FF7DA9"
+                android:textColor="@color/newSec"
                 android:textSize="18sp" />
 
             <Space
@@ -146,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="no age"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
@@ -160,7 +161,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Blood group: "
-                android:textColor="#FF7DA9"
+                android:textColor="@color/newSec"
                 android:textSize="18sp" />
 
             <Space
@@ -172,7 +173,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="no bloodGroup"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
@@ -186,7 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mobile: "
-                android:textColor="#FF7DA9"
+                android:textColor="@color/newSec"
                 android:textSize="18sp" />
 
             <Space
@@ -198,7 +199,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Data not available"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
@@ -212,7 +213,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Address: "
-                android:textColor="#FF7DA9"
+                android:textColor="@color/newSec"
                 android:textSize="18sp" />
 
             <Space
@@ -224,7 +225,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="No data available"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
@@ -238,7 +239,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name of Doctor: "
-                android:textColor="#FF7DA9"
+                android:textColor="@color/newSec"
                 android:textSize="18sp" />
 
             <Space
@@ -250,7 +251,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="No data available"
-                android:textColor="#3FBEAB"
+                android:textColor="@color/newPri"
                 android:textSize="18sp" />
         </LinearLayout>
         <de.hdodenhof.circleimageview.CircleImageView
@@ -264,7 +265,7 @@
             android:layout_height="1dp"
             android:layout_centerVertical="true"
             android:layout_margin="10dp"
-            android:background="#A6F8F1" />
+            android:background="@color/newPri" />
         <Button
             android:id="@+id/realTimeStreaming"
             android:layout_width="match_parent"

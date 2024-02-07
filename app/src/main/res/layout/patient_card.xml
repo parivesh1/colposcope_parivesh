@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#D0FFEB"
-
-    >
+    android:background="@color/newQua">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +32,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Name: "
-                    android:textColor="#FF7DA9"
+                    android:textColor="@color/newSec"
                     android:textSize="18sp" />
 
                 <Space
@@ -46,7 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="no name"
-                    android:textColor="#3FBEAB"
+                    android:textColor="@color/newTer"
                     android:textSize="18sp" />
             </LinearLayout>
             <LinearLayout
@@ -61,7 +59,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mobile: "
-                    android:textColor="#FF7DA9"
+                    android:textColor="@color/newSec"
                     android:textSize="18sp" />
 
                 <Space
@@ -73,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Patient Mobile"
-                    android:textColor="#3FBEAB"
+                    android:textColor="@color/newTer"
                     android:textSize="18sp" />
             </LinearLayout>
             <LinearLayout
@@ -88,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Patient DOB: "
-                    android:textColor="#FF7DA9"
+                    android:textColor="@color/newSec"
                     android:textSize="18sp" />
 
                 <Space
@@ -100,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Patient DOB"
-                    android:textColor="#3FBEAB"
+                    android:textColor="@color/newTer"
                     android:textSize="18sp" />
             </LinearLayout>
 

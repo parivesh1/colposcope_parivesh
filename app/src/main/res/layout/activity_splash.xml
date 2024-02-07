@@ -17,9 +17,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="240dp"
         android:id="@+id/logo"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="120dp"
         android:scaleType="fitXY"
         android:src="@drawable/logo" />
 
@@ -33,7 +33,7 @@
         android:textSize="24dp"
         android:layout_marginTop="16dp"
         android:layout_below="@id/logo"
-        android:textColor="@color/white"
+        android:textColor="@color/newPri"
         android:textStyle="italic"
         tools:ignore="MissingConstraints">
     </TextView>
