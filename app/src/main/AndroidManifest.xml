@@ -76,7 +76,7 @@
             android:name=".ReportSelection"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ColposcopyReport"
+            android:name=".UrologyReport"
             android:theme="@style/AppTheme"  />
         <activity
             android:name=".SwedeScore"

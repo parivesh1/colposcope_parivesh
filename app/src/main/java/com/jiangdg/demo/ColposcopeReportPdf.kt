@@ -129,7 +129,7 @@ class ColposcopeReportPdf : AppCompatActivity(){
         })
         if (Global.chiefComplaintList.size == 0 && Global.pathologicalReportList.size == 0 &&
             Global.finalImpressionList.size == 0 && Global.cytologyReportList.size == 0 &&
-            Global.colposcopyFindingsList.size == 0) {
+            Global.urologyFindingsList.size == 0) {
             checkRecord.removeAllViews()
         } else {
             System.out.println("size" + Global.pathologicalReportList.size)
@@ -139,12 +139,12 @@ class ColposcopeReportPdf : AppCompatActivity(){
                 chiefComplaintList.text = Global.chiefComplaintList.toString()
                     .substring(1, Global.chiefComplaintList.toString().length - 1)
             }
-            if (Global.colposcopyFindingsList.size == 0) {
+            if (Global.urologyFindingsList.size == 0) {
                 colposcopyFinding.removeAllViews()
             } else {
                 colposcopyFindingList.text =
-                    Global.colposcopyFindingsList.toString()
-                        .substring(1, Global.colposcopyFindingsList.toString().length - 1)
+                    Global.urologyFindingsList.toString()
+                        .substring(1, Global.urologyFindingsList.toString().length - 1)
             }
             if (Global.cytologyReportList.size == 0) {
                 cytologyReport.removeAllViews()
@@ -368,7 +368,7 @@ class ColposcopeReportPdf : AppCompatActivity(){
                             .setValue(downloadUri)
                         Global.chiefComplaintList.clear()
                         Global.imageList.clear()
-                        Global.colposcopyFindingsList.clear()
+                        Global.urologyFindingsList.clear()
                         Global.cytologyReportList.clear()
                         Global.finalImpressionList.clear()
                         Global.pathologicalReportList.clear()

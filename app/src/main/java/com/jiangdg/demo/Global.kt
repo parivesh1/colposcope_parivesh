@@ -1,6 +1,5 @@
 package com.jiangdg.demo
 
-import android.net.Uri
 import com.google.firebase.auth.FirebaseUser
 
 class Global {
@@ -161,7 +160,7 @@ class Global {
         var pathologicalReportList:  MutableList<String> = mutableListOf()
         var finalImpressionList:  MutableList<String> = mutableListOf()
         var cytologyReportList:  MutableList<String> = mutableListOf()
-        var colposcopyFindingsList:  MutableList<String> = mutableListOf()
+        var urologyFindingsList:  MutableList<String> = mutableListOf()
         var pdfUri: String = ""
         var patientId: String =""
         var doctorUID: String = ""

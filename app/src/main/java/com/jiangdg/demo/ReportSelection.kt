@@ -60,7 +60,7 @@ class ReportSelection: AppCompatActivity() {
         reports.adapter = arr
         reports.onItemClickListener = AdapterView.OnItemClickListener { adapterView, view, i, l ->
             if (i == 0) {
-                val intent = Intent(this@ReportSelection, ColposcopyReport::class.java)
+                val intent = Intent(this@ReportSelection, UrologyReport::class.java)
                 startActivity(intent)
             }
             if (i == 1) {
@@ -95,7 +95,7 @@ class ReportSelection: AppCompatActivity() {
 
 
         nextButton.setOnClickListener(View.OnClickListener {
-            if (Global.chiefComplaintList.size != 0 || Global.pathologicalReportList.size != 0 || Global.finalImpressionList.size != 0 || Global.cytologyReportList.size != 0 || Global.colposcopyFindingsList.size != 0) {
+            if (Global.chiefComplaintList.size != 0 || Global.pathologicalReportList.size != 0 || Global.finalImpressionList.size != 0 || Global.cytologyReportList.size != 0 || Global.urologyFindingsList.size != 0) {
                 val intent = Intent(this@ReportSelection, ColposcopeReportPdf::class.java)
                 startActivity(intent)
             } else if (Global.analInjuriesorinjurytoanalfoldsList.size != 0 || Global.erythemaList.size != 0 || Global.greenFilterList.size != 0 || Global.posteriorFourchetteList.size != 0 || Global.presenceOfForeignBodiesList.size != 0 || Global.skinOrMucosalTraumaList.size != 0 || Global.stainingEffectList.size != 0 || Global.swabSampleList.size != 0) {

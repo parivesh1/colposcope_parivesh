@@ -7,156 +7,70 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.colposcopy_report.clearButton
-import kotlinx.android.synthetic.main.colposcopy_report.exitButton
-import kotlinx.android.synthetic.main.colposcopy_report.listViewLayout
-import kotlinx.android.synthetic.main.colposcopy_report.remark
-import kotlinx.android.synthetic.main.colposcopy_report.reports
-import kotlinx.android.synthetic.main.colposcopy_report.saveButton
-import kotlinx.android.synthetic.main.colposcopy_report.scrollView
-import kotlinx.android.synthetic.main.colposcopy_report.toolbar
+import kotlinx.android.synthetic.main.urology_report.clearButton
+import kotlinx.android.synthetic.main.urology_report.exitButton
+import kotlinx.android.synthetic.main.urology_report.listViewLayout
+import kotlinx.android.synthetic.main.urology_report.remark
+import kotlinx.android.synthetic.main.urology_report.reports
+import kotlinx.android.synthetic.main.urology_report.saveButton
+import kotlinx.android.synthetic.main.urology_report.scrollView
+import kotlinx.android.synthetic.main.urology_report.toolbar
 
 
-class ColposcopyReport: AppCompatActivity() {
+class UrologyReport: AppCompatActivity() {
     var report = arrayOf(
         "Chief Complaint",
-        "Colposcopy Findings",
+        "Urology Findings",
         "Cytology Report",
         "Final Impression",
         "Pathological Report",
         "Precautions",
         "Remarks",
-        "Treatment",
-        "Custom Remarks"
+        "Treatment"
     )
 
-    var chiefComplaint = arrayOf(
-        "Abdominal Mass",
-        "Abdominal Pain",
-        "Abdominal Bleeding",
-        "Amenorrhoea",
-        "Anemia",
-        "Become Thin",
-        "Constipation",
-        "Dyspareunia",
-        "Fishy Odor",
-        "Frequent Micturition",
-        "Inter Menstrual Bleeding",
-        "Pelvic Examine",
-        "Post Coital Bleeding",
-        "Post Menopausal Bleding",
-        "Purulent Discharge",
-        "Sterility",
-        "Vaginal Pruritus",
-        "Vaginal Soreness",
-        "Vulvar Burning",
-        "Vulvar Erthyema",
-        "Vulvar Neoplasm",
-        "Vulvar Pruritus",
-        "Vulvar Ulcer"
-    )
-    var colposcopyFindings = arrayOf(
-        "Aceto-White Epithelium",
-        "Atrophy",
-        "Atypical Vessels",
-        "Cervix Not Vissible",
-        "Colposcopically SuspectInvasive Carcinoma",
-        "Columnar Epithelium",
-        "Cyst",
-        "Exophytic Condyloma",
-        "Flat",
-        "Gland Opening & Ectropion",
-        "Inflamantion",
-        "Iodine Masculine Area",
-        "Leukoplakia",
-        "Micropapillary or Micro Convoluted",
-        "Moasic",
-        "Nabothian Cyst",
-        "Nabothian Follicle",
-        "Non Aceto-White Micropapillay Surface",
-        "Normal Transformation Zone ",
-        "Original Squamous Epithelium",
-        "Others",
-        "Punctation",
-        "Servere Inflamation or Severe Atophy",
-        "Squamonocolumnar Junctive not Atrophy",
-        "Ulcer",
-        "White Ring & White Gland"
-    )
+    private var chiefComplaint = arrayOf("Benign Prostatic Enlargement (BPE)", "Urinary Tract Infections (UTIs)", "Kidney Stones", "Hematuria", "Urinary Incontinence", "Overactive bladder",
+        "Enlarged prostate", "Bladder muscles become weak", "Sphincter muscles become weak", "Weak bladder muscles", "Neuromuscular problems",
+        "Overhydration", "Prostate Cancer", "Frequent urge to urinate", "Foul-smelling urine",
+        "Pain or burning sensation while urination", "Fever or chills", "Fatigue", "Muscle aches", "Pain in lower stomach, side of back or groin",
+        "Hernia", "Lump in abdomen", "Unexplained weight loss")
 
-    var cytologyReport = arrayOf(
-        "Actinomyces",
-        "Adenocarcinoma In Suit(AIS)",
-        "AGUS",
-        "ASCUS",
-        "Atrophy",
-        "Chlamydia",
-        "Endometrial Adenocarcinoma",
-        "Extrauterine Adenocarcinoma",
-        "Fungal Organisms",
-        "Herpes Simplex Viruss",
-        "HPV",
-        "HSIL",
-        "IVD",
-        "LSIL",
-        "Mild Endocervical Cell Dysplasia",
-        "Mild Inflamation",
-        "Moderate Inflamation",
+    var urologyFindings = arrayOf("Prostate cancer", "Urinary tract infections", "Erectile dysfunction", "Incontinence",
+        "Kidney stones",
+        "Overactive bladder", "Prostatitis", "Bladder prolapse", "Hematuria", "Interstitial cystitis",
+        "Hydronephrosis", "Kidney cancer", "Infertility", "Congenital urologic conditions",
+        "Hypospadias", "Urethral cancer", "Bedwetting", "Bladder exstrophy",
+        "Common paediatric tumours ",
+        "Ureterocele", "Ureteropelvic junction obstruction", "Urethral stricture disease")
+
+    private var cytologyReport = arrayOf("Actinomyces", "Adenocarcinoma In Suit(AIS)", "AGUS", "ASCUS", "Atrophy", "Chlamydia",
+        "Endometrial Adenocarcinoma", "Extrauterine Adenocarcinoma", "Fungal Organisms",
+        "Herpes Simplex Viruss", "HPV",
+        "HSIL", "IVD", "LSIL", "Mild Endocervical Cell Dysplasia", "Mild Inflamation", "Moderate Inflamation",
         "Normal",
-        "Predominance Of Coccobacilli ",
-        "Severe Inflamation",
-        "Squamous Cell Carcinoma",
-        "Trichomonas",
-        "Radiation",
-        "Severe Endocervical Cell Dysplasia"
-    )
-    var finalImpression = arrayOf(
-        "Cervical Cnacer Detected",
-        "HPV",
-        "Normal Study",
-        "PAP Smear Advised",
-        "Regular Three Monthly Follow-Up"
-    )
-    var pathologicalReport = arrayOf(
-        "Acute Cervicitis",
-        "Adenoid Cystic Carcinoma",
-        "Adenosquamous Carcinoma",
-        "Cervical Malignant Meanoma",
-        "Cervical Papilloma",
-        "Cervical Polyp",
-        "Cervical Sarcoma",
-        "CIN-1",
-        "CIN-2",
-        "CIN-3",
-        "HPV",
-        "Invasive Squamous Carcinoma",
-        "CMIcro Invasive Squamous Carcinoma (MIC)"
-    )
-    var Precautions = arrayOf(
-        "Avoid Sexual Intercourse Within Two Weeks",
-        "Come To Pick Up Pathology Report in One Week",
-        "Remove Guage After 24 Hours & Keep Sanitary ",
-        "Slight Bleeding May Occur In Vagina For 10 Days "
-    )
-    var Treatment = arrayOf(
-        "Cervical Biopsy",
-        "Conization",
-        "ACryothalamectomy",
-        "Endocervical Curettage(ECC)",
-        "HPV Test",
-        "Laser",
-        "LEEP",
-        "Radiation",
-        "Radical Hysterectomy",
-        "Repeat PAP 3-6 Months",
-        "Routine Follow-Up"
-    )
+        "Predominance Of Coccobacilli ", "Severe Inflamation", "Squamous Cell Carcinoma", "Trichomonas",
+        "Radiation", "Severe Endocervical Cell Dysplasia")
+
+    var finalImpression = arrayOf("Urinary Tract infection (UTIs) Detected", "Cancer of the Bladder","Kidney Cancer","Cancer in Adrenal gland", "Urinary Tract infections", " Kidney stones",
+        "Regular Three Monthly Follow-Up")
+
+    var pathologicalReport = arrayOf("Acute Cervicitis", "Adenoid Cystic Carcinoma", "Adenosquamous Carcinoma",
+        "Cervical Malignant Meanoma", "Cervical Papilloma",
+        "Cervical Polyp", "Cervical Sarcoma", "CIN-1", "CIN-2", "CIN-3", "HPV",
+        "Invasive Squamous Carcinoma", "CMIcro Invasive Squamous Carcinoma (MIC)")
+
+    var Precautions = arrayOf("Stay well hydrated", "Minimize douching, sprays, or powders in the genital area",
+        "Maintain Good Sexual Hygiene")
+
+    var Treatment = arrayOf("Trimethoprim and sulfamethoxazole", "Conization", "ACryothalamectomy", "Endocervical Curettage(ECC)", "Laser",
+        "LEEP", "Radiation", "Radical Hysterectomy", "Routine Follow-Up")
+
     var mylist = ArrayList<String>()
-    var colpoReport = Global()
+    var urologyReport = Global()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.colposcopy_report)
-        toolbar.title="Colposcopy Report"
+        setContentView(R.layout.urology_report)
+        toolbar.title="Urology Report"
 
         val arr: ArrayAdapter<String>
         arr = ArrayAdapter(
@@ -173,7 +87,7 @@ class ColposcopyReport: AppCompatActivity() {
             }
             if (position == 1) {
                 makeVisible(view)
-                createCheckBox(colposcopyFindings, "colposcopyFindings")
+                createCheckBox(urologyFindings, "urologyFindings")
             }
             if (position == 2) {
                 makeVisible(view)
@@ -206,14 +120,14 @@ class ColposcopyReport: AppCompatActivity() {
         })
 
         saveButton.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this@ColposcopyReport, ReportSelection::class.java)
+            val intent = Intent(this@UrologyReport, ReportSelection::class.java)
             startActivity(intent)
             System.out.println(Global.chiefComplaintList)
         })
         clearButton.setOnClickListener(View.OnClickListener {
             Global.chiefComplaintList.clear()
             mylist.clear()
-            Global.colposcopyFindingsList.clear()
+            Global.urologyFindingsList.clear()
             Global.cytologyReportList.clear()
             Global.finalImpressionList.clear()
             Global.pathologicalReportList.clear()
@@ -223,7 +137,7 @@ class ColposcopyReport: AppCompatActivity() {
             startActivity(intent)
         })
         exitButton.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this@ColposcopyReport, ReportSelection::class.java)
+            val intent = Intent(this@UrologyReport, ReportSelection::class.java)
             startActivity(intent)
         })
     }
@@ -238,7 +152,7 @@ class ColposcopyReport: AppCompatActivity() {
             val checkBox = CheckBox(listViewLayout.getContext())
             checkBox.text = arrList[i]
             listViewLayout.addView(checkBox)
-            if (mylist.contains(arrList[i]) || Global.colposcopyFindingsList.contains(arrList[i])
+            if (mylist.contains(arrList[i]) || Global.urologyFindingsList.contains(arrList[i])
                 || Global.cytologyReportList.contains(arrList[i]) ||
                 Global.finalImpressionList.contains(arrList[i]) ||
                 Global.pathologicalReportList.contains(arrList[i]) ||
@@ -249,7 +163,7 @@ class ColposcopyReport: AppCompatActivity() {
                 checkBox.isChecked = true
             }
             //            checkBox.setChecked(true);
-            checkBox.setOnCheckedChangeListener { compoundButton, b ->
+            checkBox.setOnCheckedChangeListener {_, b ->
                 if (b) {
                     mylist.add(checkBox.text.toString())
                     if (name === "Treatment") {
@@ -267,8 +181,8 @@ class ColposcopyReport: AppCompatActivity() {
                     if (name === "cytologyReport") {
                         Global.cytologyReportList += checkBox.text.toString()
                     }
-                    if (name === "colposcopyFindings") {
-                        Global.colposcopyFindingsList += checkBox.text.toString()
+                    if (name === "urologyFindings") {
+                        Global.urologyFindingsList += checkBox.text.toString()
                     }
                     if (name === "chiefComplaint") {
                         Global.chiefComplaintList += checkBox.text.toString()
@@ -290,8 +204,8 @@ class ColposcopyReport: AppCompatActivity() {
                     if (name === "cytologyReport") {
                         Global.cytologyReportList -= checkBox.text.toString()
                     }
-                    if (name === "colposcopyFindings") {
-                        Global.colposcopyFindingsList -= checkBox.text.toString()
+                    if (name === "urologyFindings") {
+                        Global.urologyFindingsList -= checkBox.text.toString()
                     }
                     if (name === "chiefComplaint") {
                         Global.chiefComplaintList -= checkBox.text.toString()
